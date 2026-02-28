@@ -174,16 +174,13 @@ const AboutMe = () => {
           {/* RIGHT VIDEO COLUMN */}
           <div className="p-12 lg:p-20 bg-studio-ink/[0.02] flex flex-col justify-between">
             
-            <div className="aspect-[3/4] overflow-hidden border border-studio-border mb-12">
-              <video
-                src="/assets/second/prev.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
+              <div className="aspect-[3/4] overflow-hidden border border-studio-border mb-12">
+              <img
+              src="/assets/second/bgg.jpg"  // change to your image path
+             alt="Project Preview"
+             className="w-full h-full object-cover"
               />
-            </div>
+          </div>
 
             <div className="grid grid-cols-2 gap-8">
               <div>
