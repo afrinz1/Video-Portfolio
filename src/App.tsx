@@ -124,7 +124,7 @@ const ToolsStrip = () => {
       <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-between gap-8 md:gap-4">
         {tools.map((tool, i) => (
           <React.Fragment key={tool}>
-            <span className="text-[10px] font-bold tracking-[0.2em] text-studio-ink/40 uppercase">
+            <span className="text-[10px] font-bold tracking-[0.2em] text-studio-ink/100 uppercase">
               {tool}
             </span>
             {i < tools.length - 1 && (
