@@ -139,18 +139,23 @@ const ToolsStrip = () => {
 
 const AboutMe = () => {
   return (
-    <section id="studio" className="py-32 px-6 max-w-7xl mx-auto border-x border-studio-border">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border-t border-studio-border">
+    <section
+      id="studio"
+      className="py-32 px-6 max-w-7xl mx-auto border-x border-studio-border"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-12 border-t border-studio-border">
         
-        <div className="lg:col-span-1 p-12 border-r border-studio-border hidden lg:flex items-start justify-center">
+        {/* Vertical Label */}
+        <div className="hidden lg:flex lg:col-span-1 p-12 border-r border-studio-border items-start justify-center">
           <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-studio-ink/20 vertical-text rotate-180">
             ABOUT THE EDITOR
           </p>
         </div>
-        
-        <div className="lg:col-span-11 grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+        {/* Main Content */}
+        <div className="lg:col-span-11 grid grid-cols-1 lg:grid-cols-2">
           
-          {/* LEFT CONTENT */}
+          {/* Left Column */}
           <div className="p-12 lg:p-20 border-b lg:border-b-0 lg:border-r border-studio-border">
             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-studio-accent mb-12 flex items-center gap-3">
               <span className="w-2 h-2 bg-studio-accent" />
@@ -158,43 +163,53 @@ const AboutMe = () => {
             </h2>
 
             <p className="text-4xl md:text-5xl font-display font-medium leading-[1.1] mb-12 text-balance">
-              I specialize in cinematic editing, working primarily in DaVinci Resolve to bring a high-end post-production feel to every project.
+              I specialize in cinematic editing, working primarily in DaVinci Resolve
+              to bring a high-end post-production feel to every project.
             </p>
 
             <div className="space-y-8 text-lg text-studio-ink/70 leading-relaxed">
               <p>
-                My focus is on storytelling and precision. I believe that the best edits are those that feel intentional, where every frame serves a purpose in the larger narrative arc.
+                My focus is on storytelling and precision. I believe that the best
+                edits are those that feel intentional, where every frame serves a
+                purpose in the larger narrative arc.
               </p>
+
               <p>
-                Currently, I’m building Hectic Labs as a structured creative studio — a space where I can scale my approach to cinematic brand storytelling and post-production systems.
+                Currently, I’m building Hectic Labs as a structured creative studio —
+                a space where I can scale my approach to cinematic brand storytelling
+                and post-production systems.
               </p>
             </div>
           </div>
-          
-          {/* RIGHT VIDEO COLUMN */}
+
+          {/* Right Column */}
           <div className="p-12 lg:p-20 bg-studio-ink/[0.02] flex flex-col justify-between">
             
-              <div className="aspect-[3/4] overflow-hidden border border-studio-border mb-12">
+            <div className="aspect-[3/4] overflow-hidden border border-studio-border mb-12">
               <img
-              src="/assets/second/bgg.jpg"  // change to your image path
-             alt="Project Preview"
-             className="w-full h-full object-cover"
+                src="/assets/second/bgg.jpg"
+                alt="Studio Preview"
+                className="w-full h-full object-cover"
               />
-          </div>
+            </div>
 
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <p className="text-[10px] font-bold text-studio-ink/40 uppercase tracking-widest mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-studio-ink/40 mb-2">
                   Specialization
                 </p>
-                <p className="text-sm font-medium">Cinematic Brand Films</p>
+                <p className="text-sm font-medium">
+                  Cinematic Brand Films
+                </p>
               </div>
 
               <div>
-                <p className="text-[10px] font-bold text-studio-ink/40 uppercase tracking-widest mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-studio-ink/40 mb-2">
                   Location
                 </p>
-                <p className="text-sm font-medium">Kerala ~ India / Global</p>
+                <p className="text-sm font-medium">
+                  Kerala ~ India / Global
+                </p>
               </div>
             </div>
 
